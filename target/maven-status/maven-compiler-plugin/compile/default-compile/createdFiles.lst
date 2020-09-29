@@ -1,0 +1,7 @@
+com\neusoft\service\NewsInfoService.class
+com\neusoft\po\NewsInfo.class
+com\neusoft\service\NewsInfoServiceImpl.class
+com\neusoft\po\NewsType.class
+com\neusoft\mapper\NewsInfoMapper.class
+com\neusoft\po\Author.class
+com\neusoft\controller\NewsInfoController.class

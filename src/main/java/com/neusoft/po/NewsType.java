@@ -1,0 +1,48 @@
+package com.neusoft.po;
+
+import java.util.List;
+
+/**
+ * @author shenqingwen
+ * @date 2020/9/11
+ **/
+public class NewsType {
+
+    private  int news_typeid;//类别编号
+    private String news_typename;//类别名称
+    //一对多的关系
+    private List<NewsInfo> infoList;
+
+    public List<NewsInfo> getInfoList() {
+        return infoList;
+    }
+    public void setInfoList(List<NewsInfo> infoList) {
+        this.infoList = infoList;
+    }
+
+    public NewsType() {
+        super();
+    }
+
+    public NewsType(int news_typeid, String news_typename,
+                    List<NewsInfo> infoList) {
+        super();
+        this.news_typeid = news_typeid;
+        this.news_typename = news_typename;
+        this.infoList = infoList;
+    }
+
+    public int getNews_typeid() {
+        return news_typeid;
+    }
+    public void setNews_typeid(int news_typeid) {
+        this.news_typeid = news_typeid;
+    }
+    public String getNews_typename() {
+        return news_typename;
+    }
+    public void setNews_typename(String news_typename) {
+        this.news_typename = news_typename;
+    }
+
+}
